@@ -160,9 +160,9 @@
         <div class="content">
           <h2 class="title is-3">Main Result</h2>
           <p>
-            Our method outperforms Solo and Group settings across different medical benchmarks. MDAgents significantly outperforms (p < 0.05) both Solo and Group setting methods, showing best performance in 7 out of 10 medical benchmarks tested. This reveals the effectiveness of adaptive strategies integrated within our system, particularly when navigating through the text-only (e.g., DDXPlus where it outperformed the best performance of single-agent by 7.2% and multi-agent by 9.5%) and text-image datasets (e.g., Path-VQA, PMC-VQA and MIMIC-CXR). Our approach not only comprehends textual information with high precision but also adeptly synthesizes visual data, a pivotal capability in medical diagnostic evaluations.
+            (a): Average Performance Improvement over basic (bs) across contexts. (b): Best Performance Improvement across LLMs. (c): Best Performance Improvement across Datasets. Note that few models (Llama 2, Gemini-Pro, BioMedGPT and BioMistral) were excluded in this experiment due to the prioritization of models based on integration timelines.  
           </p>
-          <img src="./static/images/main_result.png" alt="Bias Figure AgentClinic">
+          <img src="./static/images/new_main_result.png" alt="Bias Figure AgentClinic">
       
         </div>
       </div>
@@ -171,9 +171,9 @@
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              The design of MDAgents incorporates four stages: 1) Medical Complexity Check - The system evaluates the medical query, categorizing it as low, moderate, or high complexity based on clinical decision-making techniques. 2) Expert Recruitment - Based on complexity, the framework activates a single Primary Care Clinician (PCC) for low complexity issues, or a Multi-disciplinary Team (MDT) or Integrated Care Team (ICT) for moderate or high complexities. 3) Analysis and Synthesis - Solo queries use prompting techniques like Chain-of-Thought (CoT) and Self-Consistency (SC). MDTs involve multiple LLM agents forming a consensus, while ICTs synthesize information for the most complex cases. 4) Decision-making - The final stage synthesizes all inputs to provide a well-informed answer to the medical query.
+               Case Study on Readiness Score Prediction (READ) from PMData dataset. Here, we display the responses from 1) our fine-tuned model, HealthAlpaca, 2) GPT-3.5, 3) GPT-4 and 4) Gemini-Pro. Green Bolded texts highlights the valid reasoning and Red Bolded texts highlights the false or irrelevant reasoning to the input.
             </p>
-            <img src="./static/images/case_study.png" alt="Bias Figure AgentClinic">
+            <img src="./static/images/new_case_study.png" alt="Bias Figure AgentClinic">
       
           </div>
 
